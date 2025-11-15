@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mi Banco</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Logo y menus-->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img src="Logo\Captura de pantalla 2025-11-08 131935.png" alt="" />
+      </a>
+
+      <ul class="Menuhorizontal">
+        <li><a href="">¿Quienes somos</a></li>
+        <li>
+          <a href="">Servicios</a>
+          <ul class="MenuVertical">
+            <li><a href="">Transferencias</a></li>
+            <li><a href="">Historial bancario</a></li>
+            <li><a href="">Prestamos</a></li>
+            <li><a href="">Cuenta de ahorros</a></li>
+          </ul>
+        </li>
+        <li><a href="">Somos</a></li>
+        <li><a href="">Contactanos</a></li>
+      </ul>
+    </nav>
+
+    <!--seccion quienes somos-->
+    <section class="seccion-quienessomos">
+      <div class="cont-gral-quienessomos">
+        <div class="cont-quienes-texto">
+          <h2>Seccion de quienes somos</h2>
+          <p>
+            En Mi Banco, trabajamos con un propósito claro: acompañar a cada
+            persona y empresa en el crecimiento de sus sueños financieros. Somos
+            una institución sólida, moderna y comprometida con ofrecer
+            soluciones seguras, accesibles y transparentes que impulsen el
+            bienestar económico de nuestros clientes.
+          </p>
+        </div>
+        <div class="cont-quienes-img"><img src="Imagenes/pic-qs-1.png"</div>
+      </div>
+    </section>
+
+    <!--seccion servicios-->
+    <section class="seccion-servicios">
+      <div class="cont-gral-servicios">
+        <div class="cont-ser-texto">
+          <h2>Seccion Servicios</h2>
+          <p>
+            En Mi Banco, ofrecemos una amplia gama de servicios financieros
+            diseñados para adaptarse a las necesidades de cada cliente. Nuestro
+            compromiso es brindar soluciones seguras, eficientes y modernas que
+            faciliten el manejo de sus finanzas personales y empresariales.
+          </p>
+          <p>
+            Contamos con productos de ahorro e inversión, créditos personales y
+            empresariales, cuentas digitales, y servicios de pago y
+            transferencias que garantizan rapidez, confianza y accesibilidad.
+          </p>
+          <button>Leer más...</button>
+        </div>
+        <div class="cont-ser-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/XhAtNiGEqUg?si=jBjVnx04sGBcKZXc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!--seccion formulario-->
+    <section class="seccion-formulario">
+      <div class="cont-gral-formulario">
+        <p>Complete todos los datos y sus preferencias</p>
+        <form class="formulario">
+          <div class="Campo">
+            <label form="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresa su nombre"
+            />
+          </div>
+          <!--Lista despegable-->
+          <div class="campo">
+            <label for="pais">Pais:</label>
+
+            <select id="pais" name="pais">
+              <option value="">Selecciones un pasis</option>
+              <option value="Perú">Perú</option>
+              <option value="Perú">Colombia</option>
+              <option value="Perú">Argentina</option>
+              <option value="Perú">Cuba</option>
+            </select>
+          </div>
+          <!--checkbox-->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input type="checkbox" name"intereses"
+                  value="tecnologia">Tecnología</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name"intereses"
+                  value="educacion">Educación</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name"intereses"
+                  value="idiomas">Idiomas</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!--radio button-->
+          <div class="campo">
+            <label>Genero:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name"genero"
+                  value="masculino">Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name"genero"
+                  value="femenino">Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!--radio button-->
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="Logo/Captura de pantalla 2025-11-08 131935.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>Mi Banco</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

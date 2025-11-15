@@ -1,0 +1,261 @@
+/*Menu*/
+.topheader {
+  position: fixed;
+  background-color: #f3ece3;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logo img {
+  width: 150px;
+  height: 70px;
+}
+.Menuhorizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Menuhorizontal li a {
+  text-decoration: none;
+  color: black;
+}
+.MenuVertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  width: 200px;
+  list-style: none;
+}
+
+.Menuhorizontal li a:hover {
+  color: blue;
+  /*font-size: 25px;*/
+}
+.Menuhorizontal li:hover .MenuVertical {
+  display: block;
+}
+.MenuVertical li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/*seccion quienes*/
+.seccion-quienessomos {
+  padding: 60px 20px;
+  background-color: white;
+}
+.cont-gral-quienessomos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.cont-quienes-texto {
+  flex: 1;
+}
+.cont-quienes-texto h2 {
+  color: blue;
+  margin-bottom: 15px;
+}
+.cont-quienes-texto p {
+  color: black;
+  line-height: 1.6;
+}
+
+.cont-quienes-img {
+  flex: 1;
+}
+
+.cont-quienes-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/*seccion servicios*/
+.seccion-servicios {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.cont-gral-servicios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.cont-ser-texto {
+  flex: 1;
+}
+.cont-ser-texto h2 {
+  color: blue;
+  line-height: 1.6;
+}
+.cont-ser-texto button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cont-ser-video iframe {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/*Seccion formulario*/
+
+.seccion-fromulario {
+  background-color: #bceef3;
+  padding: 40px;
+  border: 3px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.cont-gral-formulario {
+  background-color: beige;
+  padding: 30px;
+  border: 2px solid bla;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.campo {
+  background-color: #c4eced;
+  padding: 15px;
+  border: 1.5px solid red;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.formulario input [type="text"],
+.formulario select {
+  width: 100%;
+  padding: 8px;
+  border: 1.5px solid #05056c;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.lista checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 8px;
+  border: 1px solid white;
+  background-color: #63f0c1;
+  border-radius: 5px;
+}
+
+.formulario button {
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid #05056c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer general */
+.footer {
+  background-color: #222; /* Fondo oscuro para contraste */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}
